@@ -1,0 +1,22 @@
+<!-- Start Advanced Store Localization Code: https://apps.shopify.com/advanced-geo-functions --> 
+{%- capture contentForQuerystring -%}{{ content_for_header }}{%- endcapture -%}
+    {%- assign page_url = contentForQuerystring | split:'"pageurl":"' | last | split:'"' | first | replace: '\/', '/' | replace:'\u0026','&' -%}    
+        <script>
+    window.asl_load_error = function(){
+        $('style#asl_cleaner').remove(); 
+        $('style#asl_custom_filters').remove();
+        $('style#asl_filter').remove(); 
+    }
+    </script>
+    <script rel="asl_loader" src="https://shopapi.wyldcode.com/api.js?themeid={{ theme.id }}&url={{ page_url | url_encode }}" onerror="asl_load_error()"></script>
+{% unless contentForQuerystring contains "Shopify.designMode" %}
+<style id="asl_filter">
+</style>
+<style id="asl_cleaner">
+.asl_discard  { visibility: none !important; opacity: 0 !important }
+</style>
+<style>
+    </style>
+{% endunless %}
+<!-- End Advanced Store Localization Code --> 
+
