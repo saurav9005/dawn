@@ -22,14 +22,14 @@
     "1717443614696ac970": {
       "type": "apps",
       "blocks": {
-        "algolia_search_and_discovery_instantsearch_9TUXne": {
+        "algolia_search_and_discovery_instantsearch_wkWTTb": {
           "type": "shopify:\/\/apps\/algolia-search-and-discovery\/blocks\/instantsearch\/57bb7f86-d5fe-4d43-96ca-3953324494cf",
           "settings": {
           }
         }
       },
       "block_order": [
-        "algolia_search_and_discovery_instantsearch_9TUXne"
+        "algolia_search_and_discovery_instantsearch_wkWTTb"
       ],
       "settings": {
         "include_margins": false
